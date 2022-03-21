@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-03-21T19:41:58.51713632Z
+# Generated with JReleaser 1.0.0-M2 at 2022-03-21T19:44:00.670945762Z
 class KfkTopicList < Formula
   desc "Kafka: CLI: Topic List: Expand Kafka topic listing with Offsets and more."
   homepage "https://github.com/jeqo/poc-apache-kafka"
