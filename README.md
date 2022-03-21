@@ -46,4 +46,3 @@ If you get a dialog stating the cask is broken try installing with `--no-quarant
 
 ## Documentation
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
-
