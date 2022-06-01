@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-06-01T01:18:14.108942072Z
+# Generated with JReleaser 1.0.0-M2 at 2022-06-01T01:22:36.290408663Z
 class KfkProducerDatagen < Formula
   desc "Kafka CLI: Producer Datagen"
   homepage "https://github.com/jeqo/kafka-cli"
