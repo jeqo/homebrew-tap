@@ -1,17 +1,17 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-06-01T01:44:37.186835356Z
+# Generated with JReleaser 1.0.0-M2 at 2022-07-27T23:51:02.554780382Z
 class KfkCtx < Formula
   desc "Kafka: CLI: Context: Manage Kafka cluster contexts."
   homepage "https://github.com/jeqo/kafka-cli"
-  version "0.2.11"
+  version "0.3.0"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-context-v0.2.11/kfk-ctx-0.2.11-linux-x86_64.zip"
-    sha256 "7ef89fc095d1df0179dacad3659487d65abc2db86cffa181ebc6ac2e86094c78"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-context-v0.3.0/kfk-ctx-0.3.0-linux-x86_64.zip"
+    sha256 "3ec903b1eeb42c1e43f02cabfa43e811d4278949cb6badf8dfc46f9a9afe7b27"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-context-v0.2.11/kfk-ctx-0.2.11-osx-x86_64.zip"
-    sha256 "e87cc23e9036a0c054b35bce226dc6b14b3b54ebcd6b69a05dbdd910b027300b"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-context-v0.3.0/kfk-ctx-0.3.0-osx-x86_64.zip"
+    sha256 "1cc6198486131c0956eda5c2d61ec7c453b42650a52a379ea00924c757a60be3"
   end
 
 
@@ -22,6 +22,6 @@ class KfkCtx < Formula
 
   test do
     output = shell_output("#{bin}/kfk-ctx --version")
-    assert_match "0.2.11", output
+    assert_match "0.3.0", output
   end
 end
