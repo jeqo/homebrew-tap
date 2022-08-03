@@ -1,17 +1,17 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-07-22T00:39:48.906363056Z
+# Generated with JReleaser 1.0.0-M2 at 2022-08-03T14:20:42.193605625Z
 class KfkEmulator < Formula
   desc "Kafka CLI: Emulator"
   homepage "https://github.com/jeqo/kafka-cli"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-emulator-v0.3.0/kfk-emulator-0.3.0-linux-x86_64.zip"
-    sha256 "66fd94856e466c5cee6340091005823d52214a15cdd81f5a96742e992f4563a9"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-emulator-v0.3.1/kfk-emulator-0.3.1-linux-x86_64.zip"
+    sha256 "fd2ceb58b7adba2bb8318d5cb2e87f21822b07e382a9fff2bb80b02a01c54bb6"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-emulator-v0.3.0/kfk-emulator-0.3.0-osx-x86_64.zip"
-    sha256 "00afe113e5d3360c0849d2299cec32a7536572bd37d2bbb68208e7a55484b280"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-emulator-v0.3.1/kfk-emulator-0.3.1-osx-x86_64.zip"
+    sha256 "b8ba349a04f8c4beabaab459a5262fe36ae68f02ca775349363773697ace4e6d"
   end
 
 
@@ -22,6 +22,6 @@ class KfkEmulator < Formula
 
   test do
     output = shell_output("#{bin}/kfk-emulator --version")
-    assert_match "0.3.0", output
+    assert_match "0.3.1", output
   end
 end
