@@ -1,17 +1,17 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-09-05T13:01:28.166185664Z
+# Generated with JReleaser 1.0.0-M2 at 2022-09-26T11:16:17.362423468Z
 class KfkProducerDatagen < Formula
   desc "Kafka CLI: Producer Datagen"
   homepage "https://github.com/jeqo/kafka-cli"
-  version "0.2.6"
+  version "0.3.0"
   license "Apache-2.0"
 
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.2.6/kfk-producer-datagen-0.2.6-linux-x86_64.zip"
-    sha256 "17c74a2aa00fa361c8e276edc789162176d0b716c3448b429b15289cbbc54e17"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.3.0/kfk-producer-datagen-0.3.0-linux-x86_64.zip"
+    sha256 "807dc8cbf6f53e03574437a984750158830fb7f3b773e55fad377026393c0d21"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.2.6/kfk-producer-datagen-0.2.6-osx-x86_64.zip"
-    sha256 "bf29fe39ebc23172c529552e94394fdb9aa15ea0069913902d5efb7f4990a2d4"
+    url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.3.0/kfk-producer-datagen-0.3.0-osx-x86_64.zip"
+    sha256 "c60680482376f9cf96b49b5d9f7f039587c6e33825e27436bb389486d49e34f6"
   end
 
 
@@ -22,6 +22,6 @@ class KfkProducerDatagen < Formula
 
   test do
     output = shell_output("#{bin}/kfk-producer-datagen --version")
-    assert_match "0.2.6", output
+    assert_match "0.3.0", output
   end
 end
