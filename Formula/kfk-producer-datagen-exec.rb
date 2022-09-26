@@ -1,10 +1,10 @@
-# Generated with JReleaser 1.0.0-M2 at 2022-09-05T13:01:28.166185664Z
+# Generated with JReleaser 1.0.0-M2 at 2022-09-26T11:16:17.362423468Z
 class KfkProducerDatagenExec < Formula
   desc "Kafka CLI: Producer Datagen"
   homepage "https://github.com/jeqo/kafka-cli"
-  url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.2.6/kfk-producer-datagen-exec.jar", :using => :nounzip
-  version "0.2.6"
-  sha256 "b7f6b10b6183613f408c2249cac61b611e150ba0646be9abcb97ae3d3c283576"
+  url "https://github.com/jeqo/kafka-cli/releases/download/cli-producer-datagen-v0.3.0/kfk-producer-datagen-exec.jar", :using => :nounzip
+  version "0.3.0"
+  sha256 "8879f7cec64b6d426f4678b0199c4fc1b9053d92ac86ac00fb978529a28052cf"
   license "Apache-2.0"
 
   depends_on "openjdk@17"
@@ -16,6 +16,6 @@ class KfkProducerDatagenExec < Formula
 
   test do
     output = shell_output("#{bin}/kfk-producer-datagen-exec --version")
-    assert_match "0.2.6", output
+    assert_match "0.3.0", output
   end
 end
